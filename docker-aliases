@@ -1,4 +1,4 @@
 #DockercontainerRemoveAll -> Remove all container
 alias Drca='docker rm -f 'docker ps -a -q'
 #DockercontainerRemoveStopped -> Remove all non-running containers
-alisa Dcrs= 'docker
+alisa Dcrs= 'docker rm -f 'docker ps -f
