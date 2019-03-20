@@ -4,4 +4,4 @@
 ## Setup exec permissions sudo chmod +x /bin/make-docker-image
 
 IMAGE=$(head -1 Dockerfile | sed -e 's/#//')
-docker build -t 
+docker build -t $IMAGE
