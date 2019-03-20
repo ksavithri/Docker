@@ -3,4 +3,4 @@
 ## Download this file and copy this file to /bin/make-docker-image with sudo
 ## Setup exec permissions sudo chmod +x /bin/make-docker-image
 
-IMAGE=$(head -1 Docker)
+IMAGE=$(head -1 Dockerfile | sed)
