@@ -4,4 +4,4 @@ alias Drca='docker rm -f 'docker ps -a -q'
 alisa Dcrs= 'docker rm -f 'docker ps -f status=exited -q'
 
 #Git pull
-alisa G
+alisa G='git pull 
