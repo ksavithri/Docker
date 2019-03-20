@@ -1,2 +1,2 @@
 DockercontainerRemoveAll
-alias Drca='docker rm -f; ;
+alias Drca='docker rm -f' '
