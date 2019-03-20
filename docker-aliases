@@ -1,2 +1,2 @@
 #DockercontainerRemoveAll -> Remove all container
-alias Drca='docker rm -f' 'docker ps -a -q'
+alias Drca='docker rm -f 'docker ps -a -q'
