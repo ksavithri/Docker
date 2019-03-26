@@ -1,0 +1,12 @@
+#ksavithri/b35-terraform:v1
+FROM centos 
+RUN yum install wget unzip git -y
+RUN curl -s https://raw.githubusercontent.com/linuxautomations/labautomation/master/tools/terraform/install.sh | bash
+COPY run.sh / 
+RUN chmod +x /run.sh
+RUN mkdir -p /root/.ssh && chmod 700 /root/.ssh 
+COPY id_rsa /root/.ssh/id_rsa 
+RUN chmod 600 /root/.ssh/id_rsa
+COPY ssh-config /root/.ssh/config 
+RUN chmod 600 /root/.ssh/config
+CMD /run.sh
